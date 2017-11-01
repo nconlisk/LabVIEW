@@ -1,0 +1,18 @@
+The LabVIEW™ code developed and implemented for DAQ and results analysis during the micromotion  
+Experiments described in Chapter VIII is contained in this folder. In total there are three distinct programs:
+
+The first program (DAQ_program) is used to acquire the change in voltage from each of the DVRT sensors over  
+the testing period (all 40 cycles) and then writes these values to a .txt file.
+
+The second program (Loopsub) contains the subroutine for iterating over a signal and extracting its  amplitude. 
+
+The third program (Looptest) and its variations corresponding to the different flexion angles investigated (Looptest 10degs and Looptest 20degs) reads the data from the .txt produced by the  
+DAQ_program, then implementing each sensors individual calibration curves Looptest converts the voltage  
+signal from each sensor into displacement. In the final stages of this program the Loopsub algorithm is  employed to iterate over the displacement waveform an extract its amplitude at one cycle intervals.
+The resulting amplitude of displacement for each individual sensor over the loading cycle is then  
+output to a .txt file. The variations of the Looptest program are required due to the differences in time required to complete a full loading cycle at higher flexion angles for the same load rate. 
+
+The last program (Coordinate_transformation) reads in the values of displacement from the individual sensor .txt files and carries out coordinate transformation of the sensor values to calculate the desired motions about a particular reference point in each of the six degrees of freedom. In simple terms, this program represents the LabVIEW implementation of equations 8.9 - 8.14 from Chapter VIII on page 170 of the Thesis. 
+
+Further details on the code and a brief explanation of their function can be found in Appendix C. 
+
