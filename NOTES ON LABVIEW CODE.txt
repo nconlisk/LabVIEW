@@ -1,5 +1,5 @@
-The LabVIEW™ code developed and implemented for DAQ and results analysis during the micromotion  
-Experiments described in Chapter VIII is contained in this folder. In total there are three distinct programs:
+The LabVIEWâ„¢ code developed and implemented for DAQ and results analysis during the micromotion  
+Experiments described in Chapter VIII (https://www.era.lib.ed.ac.uk/handle/1842/17551?show=full) is contained in this folder. In total there are three distinct programs:
 
 The first program (DAQ_program) is used to acquire the change in voltage from each of the DVRT sensors over  
 the testing period (all 40 cycles) and then writes these values to a .txt file.
